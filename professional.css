@@ -1,0 +1,81 @@
+/* Versión más sobria y orientada a servicio profesional. */
+.support,.travel-tips,.cities,.about,.request,.final-cta,.closing-image{display:none!important}
+.trip-styles~.trip-styles{display:none!important}
+.call-daruma{display:none!important}
+.hero-highlights article,.journey-process-steps article,.plan-price-card,.trip-style-card{box-shadow:none!important}
+.journey-process-steps article,.plan-price-card{border-color:#cfc7ba!important}
+.hero h1,.journey-process h2,.plan-pricing h2,.call-booking h2,.faq h2{letter-spacing:-.045em!important}
+.journey-process h2,.call-booking h2,.faq h2{font-size:clamp(36px,4vw,55px)!important}
+.plan-pricing{padding-top:74px!important;padding-bottom:74px!important}
+.plan-price-card{background:#fffdfa!important;border-radius:12px!important}
+.plan-price-card .signature-includes li{padding:13px 0!important}
+.plan-price-card .signature-includes b{font-size:15px!important}
+.plan-price-card .signature-includes span{font-size:13px!important;line-height:1.45!important}
+.quick-signup{border-radius:10px!important;box-shadow:none!important}
+.bamboo-banner{margin-top:20px!important;margin-bottom:20px!important}
+main .hero + .trip-styles{padding-top:38px!important}
+.journey-process{padding-top:66px!important;padding-bottom:66px!important}
+.journey-process-steps article{padding:15px 0!important}
+@media(prefers-reduced-motion:no-preference){.trip-style-card,.daily-card,.plan-price-card,.button{transition:transform .18s ease,border-color .18s ease,background .18s ease!important}.trip-style-card:hover,.plan-price-card:hover{transform:translateY(-2px)!important}}
+
+/* Mosaico principal: cada fotografía conserva su propia proporción. */
+main .hero .hero-art.hero-mosaic{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;grid-template-rows:repeat(3,minmax(0,1fr))!important;width:100%!important;height:auto!important;aspect-ratio:1 / 1!important;gap:14px!important;background:transparent!important;overflow:hidden!important}
+main .hero .hero-art.hero-mosaic .mosaic-tile{background-size:cover!important;background-repeat:no-repeat!important;background-position:center!important}
+main .hero .hero-art.hero-mosaic .mosaic-large{grid-column:1 / span 2!important;grid-row:1 / span 2!important;background-image:url('assets/images/hero-japan-fuji-lake.png')!important}
+main .hero .hero-art.hero-mosaic .mosaic-neon{grid-column:3!important;grid-row:1!important;background-image:url('assets/images/hero-shibuya.png')!important}
+main .hero .hero-art.hero-mosaic .mosaic-fuji{grid-column:3!important;grid-row:2!important;background-image:url('assets/images/fuji-sakura.png')!important}
+main .hero .hero-art.hero-mosaic .mosaic-lanterns{grid-column:1!important;grid-row:3!important;background-image:url('assets/images/yokocho.jpg')!important}
+main .hero .hero-art.hero-mosaic .mosaic-tokyo{grid-column:2!important;grid-row:3!important;background-image:url('assets/images/city-tokio-animation.png')!important}
+@media(max-width:800px){main .hero .hero-art.hero-mosaic{height:auto!important;aspect-ratio:1 / 1!important;gap:8px!important}}
+
+/* Texto central con fotografía a ambos lados. */
+.opening-banner + .hero{grid-template-columns:minmax(150px,.65fr) minmax(330px,1fr) minmax(290px,.95fr)!important;gap:4%!important;align-items:center!important}
+.hero-side-photos{position:relative;display:block;height:clamp(390px,38vw,545px)}
+.hero-side-photos img{position:absolute;display:block;object-fit:cover;border-radius:14px;box-shadow:0 14px 30px rgba(23,23,21,.14)}
+.hero-side-photos img:first-child{inset:0 13% 12% 0;width:87%;height:88%}
+.hero-side-photos img:last-child{right:0;bottom:0;width:62%;height:48%;border:5px solid var(--paper)}
+.opening-banner + .hero .hero-copy{justify-self:center;max-width:520px}
+.opening-banner + .hero .hero-art.hero-mosaic{justify-self:stretch}
+@media(max-width:980px){.opening-banner + .hero{grid-template-columns:minmax(145px,.55fr) minmax(290px,1fr) minmax(245px,.82fr)!important;gap:22px!important}.hero-side-photos{height:430px}.opening-banner + .hero .hero-copy h1{font-size:clamp(45px,5.3vw,63px)!important}}
+@media(max-width:800px){.opening-banner + .hero{grid-template-columns:1fr!important}.hero-side-photos{display:none}.opening-banner + .hero .hero-copy{max-width:none}.opening-banner + .hero .hero-art.hero-mosaic{justify-self:stretch}}
+
+/* Cinco imágenes superpuestas a la derecha del texto. */
+.opening-banner + .hero{grid-template-columns:minmax(0,.9fr) minmax(360px,1.1fr)!important;gap:7%!important}
+.opening-banner + .hero .hero-side-photos{display:none!important}
+.opening-banner + .hero .hero-copy{grid-column:1;justify-self:start;max-width:555px}
+.opening-banner + .hero .hero-art.hero-mosaic{grid-column:2;position:relative;display:block!important;width:100%!important;height:clamp(465px,43vw,600px)!important;aspect-ratio:auto!important;overflow:visible!important;background:transparent!important}
+.opening-banner + .hero .hero-art.hero-mosaic .mosaic-tile{position:absolute!important;display:block!important;border:5px solid var(--paper);border-radius:15px;background-size:cover!important;box-shadow:0 15px 32px rgba(23,23,21,.16);transition:transform .25s ease,box-shadow .25s ease}
+.opening-banner + .hero .hero-art.hero-mosaic .mosaic-large{left:2%;top:0;width:75%;height:84%;z-index:2;background-image:url('assets/images/hero-fuji-pagoda.jpg')!important;background-position:center!important}
+.opening-banner + .hero .hero-art.hero-mosaic .mosaic-neon{right:-1%;bottom:0;width:57%;height:53%;z-index:4;background-image:url('assets/images/hero-tokio-sakura.jpg')!important;background-position:center!important}
+.opening-banner + .hero .hero-art.hero-mosaic .mosaic-fuji,.opening-banner + .hero .hero-art.hero-mosaic .mosaic-lanterns,.opening-banner + .hero .hero-art.hero-mosaic .mosaic-tokyo{display:none!important}
+.opening-banner + .hero .hero-art.hero-mosaic .mosaic-tile:hover{transform:translateY(-5px) scale(1.03)!important;box-shadow:0 20px 38px rgba(23,23,21,.22)}
+.hero-photo-caption{position:absolute;right:0;bottom:0;left:0;padding:13px 14px 12px;background:linear-gradient(0deg,rgba(18,17,15,.88),rgba(18,17,15,.48));color:#fff;opacity:0;transform:translateY(8px);transition:opacity .22s ease,transform .22s ease;z-index:7}
+.mosaic-tile:hover .hero-photo-caption,.mosaic-tile:focus-within .hero-photo-caption{opacity:1;transform:translateY(0)}
+.hero-photo-caption strong{display:block;font-size:12px;line-height:1.25;letter-spacing:-.015em}.hero-photo-caption a{display:block;margin-top:5px;color:#fff;font-size:10px;line-height:1.2;text-decoration:none}.hero-photo-caption a:hover{text-decoration:underline}
+@media(max-width:800px){.hero-photo-caption{opacity:1;transform:none;padding:10px 11px}.hero-photo-caption strong{font-size:11px}.hero-photo-caption a{font-size:9px}}
+@media(max-width:800px){.opening-banner + .hero{grid-template-columns:1fr!important}.opening-banner + .hero .hero-copy{grid-column:auto}.opening-banner + .hero .hero-art.hero-mosaic{grid-column:auto;height:400px!important;margin-top:6px}.opening-banner + .hero .hero-art.hero-mosaic .mosaic-tile{border-width:3px;border-radius:11px}}
+
+/* VÃ­deo de fondo para la reserva: siempre queda bajo el contenido legible. */
+.call-booking{position:relative!important;isolation:isolate;overflow:hidden;background:#f7f4ee!important}
+.call-booking-video{position:absolute;inset:0;z-index:0;width:100%;height:100%;object-fit:contain;object-position:center;transform:scale(2.2);opacity:.52;pointer-events:none}
+.call-booking-video-overlay{position:absolute;inset:0;z-index:1;background:rgba(255,253,248,.48);pointer-events:none}
+.call-booking-copy,.call-booking-form{position:relative;z-index:2}
+@media(prefers-reduced-motion:reduce){.call-booking-video{display:none}}
+
+/* Base más clara para mantener una lectura limpia en toda la página. */
+:root{--paper:#fff;--warm:#fefdfb}
+body,.site-header{background:#fff!important}
+.quick-signup,.call-booking,.journey-process{background:#fff!important}
+
+/* Ruta retirada del menú de itinerarios. */
+.nav-menu a[href="itinerarios.html#japon-naturaleza"]{display:none!important}
+
+/* Eliminación de separadores horizontales de la portada. */
+.site-header,.journey-process,.trip-styles{border-top:0!important;border-bottom:0!important}
+.journey-process-steps,.journey-process-steps article{border-top:0!important;border-bottom:0!important}
+
+/* Portada: títulos más contenidos y equilibrados. */
+.opening-banner-copy h1{font-size:clamp(40px,4.2vw,64px)!important}.opening-banner + .hero .hero-copy h1{font-size:clamp(42px,4.45vw,66px)!important}.trip-styles-heading h2,.journey-process h2,.plan-pricing h2,.call-booking h2,.cities h2,.about h2,.request h2,.faq h2,.final-cta h2{font-size:clamp(30px,3.25vw,46px)!important}@media(max-width:800px){.opening-banner-copy h1{font-size:clamp(34px,9vw,46px)!important}.opening-banner + .hero .hero-copy h1{font-size:clamp(39px,10vw,56px)!important}.trip-styles-heading h2,.journey-process h2,.plan-pricing h2,.call-booking h2,.cities h2,.about h2,.request h2,.faq h2,.final-cta h2{font-size:clamp(29px,8vw,42px)!important}}
+
+/* Fondo más luminoso en toda la portada. */
+body,main#inicio,.hero,.trip-styles,.journey-process,.plan-pricing,.call-booking,.cities,.about,.request,.faq,.final-cta{background:#fff!important}.quick-signup{background:#fcfbf8!important}.plan-price-card,.trip-style-card{background:#fff!important}
